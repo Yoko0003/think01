@@ -1,0 +1,39 @@
+
+body{
+    background-color: rgba(0, 100, 62, 0.884);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.wordtitle{
+    font-size: 500%;
+    font-style: normal;
+    text-align: center; 
+
+}
+.wordAdvaice{
+    font-size: 300%;
+    text-align: center; 
+
+    
+}
+.wordElp{
+    font-size: 200%;
+    
+}
+#mypic{
+    width:100%;
+    max-width: 100%;
+    height: auto;
+    }
+#back001{
+    width:20%;
+    max-width: 20%;
+    height: 20%;
+}
+#next001{
+    width:20%;
+    max-width: 20%;
+    height: 20%;
+}
