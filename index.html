@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="001.css"/>
+</head>
+<body >
+
+ <div class="wordtitle">思考力トレーニング</div>
+
+ <div class="img001" align="center">
+      <!-- 画像をクリックで変更 -->
+       
+        <!-- <img src="IMG_E0644.JPG" alt="若い人たちの道"> -->
+    <!-- </div> -->
+     
+    <img id="mypic" src="心が促す道.JPG"  alt="">
+    <input type="button"value="戻る"onclick="go_back()"id="back001">
+    <input type="button"value="進む"onclick="go_forward()"id="next001">
+        <script>
+          var pics_src =new Array("心が促す道.JPG","愛の定義.jpg","笑顔で元気.JPG","食べ飲み働く.JPG");
+          var num=0;
+
+          function go_forward(){
+             if(num==3){
+               num=0;
+             }
+             else{
+               num ++;
+             }
+             document.getElementById("mypic").src=pics_src[num];
+          }
+          function go_back(){
+            if(num==0){
+              num=3;
+            }
+            else{
+              num--;
+            }
+            document.getElementById("mypic").src=pics_src[num];
+          }
+        </script>
+
+    <div class="wordAdvaice"> 
+　　　　<p>一言アドバイス</p>
+    </div>
+    
+    <div class="wordElp">
+
+      <p align="left">少しずつでよいので一日一回考えよう！</p>
+      <p align="left">  答えが出なくても大丈夫、考えることに意義がある！</p>       
+
+    </div>
+    <canvas id="ask001" width="400" height="300"></canvas>
+    <script type="text/javascript">    
+      var canvas = document.getElementById('ask001');
+      var ctx = canvas.getContext('2d');  
+
+    //途中　https://enisys-llc.com/engsprt/tips/balloondesign/
+    // 　　https://coco-factory.jp/ugokuweb/move02/4-1/
+    // <div class="flex">
+    //     <div>class=</div></div>
+
+
+ 
+</body>
+</html>
